@@ -1,6 +1,6 @@
 import React from 'react';
 import TopBar from "./Components/TopBar";
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {HashRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './Pages/Home';
 import WorkExperience from './Pages/Experience';
 import About from './Pages/About';
