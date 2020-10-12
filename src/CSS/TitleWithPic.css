@@ -1,0 +1,85 @@
+
+.TitleContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr 0.5fr 1fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr;
+    height: 100vh;
+    width: 100vw;
+    font-family: montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #434952;
+}
+
+.titleWithPic {
+    grid-row: 5/8;
+    grid-column: 3/7;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+.titleBacker {
+    grid-row: 5/9;
+    grid-column: 3/8;
+    align-self: flex-start;
+    justify-self: flex-start;
+    background-color: white;
+}
+
+.TitleImage {
+    grid-row: 3/7;
+    grid-column: 9/13;
+    align-self: flex-start;
+    justify-self: flex-start;
+}
+
+.TitleImage img {
+    max-height: 70vh;
+    width: auto;
+    border: 3px solid #C3CACE;
+}
+
+
+.workExperience {
+    background-color: #E5DFD8;
+}
+
+.workExperience .titleWithPic {
+    background-color: #F4F3EF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.educationTitle {
+    background-color: white;
+}
+
+.educationTitle .titleWithPic {
+    background-color: #d9ccc1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projectTitle {
+    background-color: #d9ccc1;
+}
+
+.projectTitle .titleWithPic {
+    background-color: #e5dfd8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projectTitle .titleBacker{
+    background-color: #F4f3EF;
+    grid-row: 5/9;
+    grid-column: 3/8;
+    display: flex;
+    align-self: stretch;
+    justify-self: stretch;
+    margin: 10px;
+}

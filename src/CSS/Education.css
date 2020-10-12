@@ -1,0 +1,55 @@
+.education {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 50vh;
+    justify-items: center;
+    align-items: center;
+    background-color: #E5DFD8;
+    color: #434952;
+}
+
+.educationDetails {
+    text-align: center;
+}
+
+.educationDetails h2 {
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+.educationDetails h3 {
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.educationDetails h4 {
+    letter-spacing: 5px;
+    font-size: 10px;
+}
+
+.educationPic img {
+    max-width: 30vw;
+    height: auto;
+    max-height: 30vh;
+}
+
+.picRight .educationDetails{
+    grid-row: 2/4;
+    grid-column: 3/6;
+}
+
+.picRight .educationPic{
+    grid-row: 2/4;
+    grid-column: 7/10;
+}
+
+.picLeft .educationDetails{
+    grid-row: 2/4;
+    grid-column: 7/10;
+}
+
+.picLeft .educationPic{
+    grid-row: 2/4;
+    grid-column: 3/6;
+}

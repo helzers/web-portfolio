@@ -1,0 +1,38 @@
+.project {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    height: 70vh;
+    font-family: montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #434952;
+}
+
+.projectDetails {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    grid-row: 2/4;
+    grid-column: 3/6;
+}
+
+.projectDetails h2 {
+    letter-spacing: 10px;
+    font-size: 30px;
+}
+
+.projectPics {
+    align-self: center;
+    justify-self: center;
+    grid-row: 2/4;
+    grid-column: 7/11;
+}
+
+.projectPics img {
+    max-width: 50vw;
+    height: auto;
+    max-height: 50vh;
+}
