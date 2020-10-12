@@ -1,7 +1,7 @@
 {
   "name": "helenwebsite",
   "version": "0.1.0",
-  "homepage": "http://helzers.github.io/personal-portfolio",
+  "homepage": "https://helzers.github.io/web-portfolio",
   "private": true,
   "dependencies": {
     "-": "0.0.1",
