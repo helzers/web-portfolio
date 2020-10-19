@@ -1,0 +1,33 @@
+
+//Color Palette
+$Grayish: #D5CDCA;
+$Glamour: #B5A19A;
+$Mauve: #B5A19A;
+$Taupe: #8C7F79;
+$Pink: #D6C3BF;
+$Pale: #E1D9D7;
+$Whiteish: #F4F3F3;
+$Blackish: #3B3E3F;
+
+
+@mixin montserratRegular {
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    color: $Whiteish;
+    text-decoration: none;
+}
+
+@mixin charterLight {
+    font-family: Charter, serif;
+    font-weight: 100;
+    color: $Whiteish;
+    text-decoration: none;
+}
+
+@mixin winsome {
+    font-family: Winsome, sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    text-decoration: none;
+    color: $Whiteish;
+}

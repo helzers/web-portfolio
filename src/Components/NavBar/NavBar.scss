@@ -1,4 +1,36 @@
-.NavBar {
+@import "../../Variables.scss";
+
+.nav-items {
     max-width: 100%;
     height: auto;
+    display: flex;
+    justify-content: flex-start;
+    background-color: $Grayish;
+    box-shadow: 3px 0px 8px $Grayish;
+
+    .nav-bar-experience, .nav-bar-projects {
+        @include montserratRegular;
+        
+        align-self: center;
+        font-size: 24px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .nav-bar-home {
+        @include winsome;
+
+        padding-left: 20px;
+        padding-right: 30px;
+    }
+    .active {
+        color: white;
+    }
+
+    .img-links {
+        align-self: center;
+        justify-self: flex-end;
+        display: flex;
+
+    }
+    
 }
