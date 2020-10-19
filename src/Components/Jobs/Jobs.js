@@ -1,5 +1,5 @@
 import React from 'react';
-import '../CSS/Jobs.css';
+import './Jobs.scss';
 
 //props for job info
 function Jobs(props) {

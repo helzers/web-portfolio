@@ -1,5 +1,5 @@
 import React from 'react';
-import '../CSS/Title.css'
+import './Title.scss'
 
 function Title(props) {
     return(

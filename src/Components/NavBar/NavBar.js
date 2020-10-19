@@ -1,8 +1,8 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
-import '../CSS/TopBar.css';
+import './NavBar.scss';
 
-function TopBar() {
+function NavBar() {
     return (
         <div className="navbar">
             <nav className="nav-items">
@@ -15,4 +15,4 @@ function TopBar() {
     )
 }
 
-export default TopBar;
+export default NavBar;

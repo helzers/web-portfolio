@@ -1,9 +1,9 @@
 import React from 'react';
-import TitleWithPic from '../Components/TitleWithPic';
-import Jobs from '../Components/Jobs';
-import Title from '../Components/Title';
+import TitleWithPic from '../../Components/TitleWithPic/TitleWithPic';
+import Jobs from '../../Components/Jobs/Jobs';
+import Title from '../../Components/Title/Title';
 
-import Volunteer from '../Components/Volunteer';
+import Volunteer from '../../Components/Volunteer/Volunteer';
 
 
 function WorkExperience() {

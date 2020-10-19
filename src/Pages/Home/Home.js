@@ -1,5 +1,5 @@
 import React from 'react';
-import HomeIntro from "../Components/HomeIntro";
+import HomeIntro from "../../Components/HomeIntro/HomeIntro";
 
 
 function Home() {

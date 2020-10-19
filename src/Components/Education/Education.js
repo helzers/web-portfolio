@@ -1,5 +1,5 @@
 import React from 'react';
-import '../CSS/Education.css'
+import './Education.scss'
 
 function Education(props){
     return(

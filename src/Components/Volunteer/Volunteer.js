@@ -1,5 +1,5 @@
 import React from 'react';
-import '../CSS/Volunteer.css'
+import './Volunteer.scss'
 
 function Volunteer(props) {
     return(

@@ -1,6 +1,6 @@
 import React from 'react';
-import Project from '../Components/Project';
-import TitleWithPic from '../Components/TitleWithPic';
+import Project from '../../Components/Project/Project';
+import TitleWithPic from '../../Components/TitleWithPic/TitleWithPic';
 
 function Projects() {
     

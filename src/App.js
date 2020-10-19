@@ -1,17 +1,17 @@
 import React from 'react';
-import TopBar from "./Components/TopBar";
+import NavBar from "./Components/NavBar/NavBar";
 import {HashRouter as Router, Switch, Route} from 'react-router-dom';
-import Home from './Pages/Home';
-import WorkExperience from './Pages/Experience';
+import Home from './Pages/Home/Home';
+import WorkExperience from './Pages/Work/Experience';
 import About from './Pages/About';
-import Projects from './Pages/Projects';
+import Projects from './Pages/Project/Projects';
 
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <TopBar />
+        <NavBar />
         <br/><br/>
           <Switch>
             <Route path="/" exact component={Home} />

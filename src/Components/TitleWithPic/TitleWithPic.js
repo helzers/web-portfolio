@@ -1,5 +1,5 @@
 import React from 'react';
-import '../CSS/TitleWithPic.css';
+import './TitleWithPic.scss';
 
 function TitleWithPic(props) {
     return (

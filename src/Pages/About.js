@@ -1,8 +1,8 @@
 import React from 'react';
-import AboutMe from '../Components/AboutMe';
-import Education from '../Components/Education';
-import TitleWithPic from '../Components/TitleWithPic';
-import Title from '../Components/Title';
+import AboutMe from '../Components/AboutMe/AboutMe';
+import Education from '../Components/Education/Education';
+import TitleWithPic from '../Components/TitleWithPic/TitleWithPic';
+import Title from '../Components/Title/Title';
 
 function About() {
     return(
