@@ -1,11 +1,11 @@
 import React from 'react';
-import HomeIntro from "../../Components/HomeIntro/HomeIntro";
+import HomeHeader from "../../Components/HomeHeader/HomeHeader";
 
 
 function Home() {
   return (
     <div>
-      <HomeIntro />
+      <HomeHeader />
     </div>
   );
 }
