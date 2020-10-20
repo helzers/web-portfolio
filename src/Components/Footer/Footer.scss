@@ -1,9 +1,9 @@
 @import '../../Variables.scss';
 
 .footer {
-    background-color: $Grayish;
     display: flex;
     justify-content: space-between;
+    background-color: $Grayish;
 
     .website-nav {
         display: flex;

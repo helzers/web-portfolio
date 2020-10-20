@@ -1,41 +1,49 @@
+@import "../../Variables.scss";
+
 .aboutMe {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    font-family: montserrat, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    height: 100vh;
-    color: #434952;
-    background-color: #c3cace;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 90vh;
+    background-color: $Whiteish;
+
+    .aboutMeImage {
+        justify-self: center;
+        align-self: center;
+        grid-row: 2/8;
+
+        img {
+            max-height: 70vh;
+            width: auto;
+        }
+    }
+
+    .bio {
+        background-color: $Glamour;
+        color: $Whiteish;
+        align-self: center;
+        justify-self: center;
+        text-align: left;
+        width: 450px;
+        padding: 30px;
+        padding-top: 40px;
+        padding-bottom: 50px;
+        margin-right: 20px;
+        padding-left: 35px;
+        grid-row: 2/7;
+
+
+        h2 {
+            @include montserratRegular;
+            letter-spacing: 10px;
+            margin-top: 0;
+        }
+
+        p {
+            @include charterLight;
+            letter-spacing: 2px;
+            line-height: 30px;
+        }
+    }
 }
 
-.bio {
-    background-color: #e5dfd8;
-    align-self: flex-start;
-    text-align: center;
-    grid-row: 3/7;
-    grid-column: 3/6;
-    padding: 20px;
-}
-
-.bio h2 {
-    letter-spacing: 10px;
-}
-
-.bio p {
-    letter-spacing: 2px;
-}
-
-.aboutMeImage {
-    justify-self: flex-start;
-    align-self: flex-start;
-    grid-row: 2/7;
-    grid-column: 8/11;
-    border: 3px solid #8d9ca4;
-}
-
-.aboutMeImage img {
-    max-height: 70vh;
-    width: auto;
-}
