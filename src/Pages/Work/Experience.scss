@@ -1,0 +1,27 @@
+@import "../../Variables.scss";
+
+.volunteer {
+    background-color: $Whiteish;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: 1fr 0.5fr 0.5fr 1fr 1fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr 1fr 0.5fr 0.5fr 1fr;
+    grid-template-rows: 1fr 0.5fr 2fr 1fr 1fr 0.5fr 0.5fr;
+    height: 90vh;
+
+    h2 {
+        @include montserratRegular;
+        color: $Blackish;
+        margin: 0;
+        font-size: 30px;
+        letter-spacing: 3px;
+        align-self: center;
+        text-align: center;
+        grid-area: 1/6/3/12;
+    }
+    .classRep {
+        grid-area: 3/3/7/8;
+    }
+    .coderdojo{ 
+        grid-area: 3/10/7/15;
+    }
+}

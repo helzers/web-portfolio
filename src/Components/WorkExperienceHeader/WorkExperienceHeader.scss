@@ -1,0 +1,41 @@
+@import "../../Variables.scss";
+
+.workHeaderContainer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+
+    margin-top: 10vh;
+    height: 90vh;
+
+    .titleWork {
+        grid-area: 5/3/6/7;
+        justify-self: center;
+        h1{
+            @include montserratRegular;
+            color: $Blackish;
+            font-size: 36px;
+            letter-spacing: 3px;
+        }
+    }
+    .image1 {
+        grid-area: 3/7/9/10;
+        z-index: 1;
+
+        img {
+            max-height: 50vh;
+        }
+    }
+    .image2 {
+        grid-area: 8/5/11/8;
+        img {
+            max-height: 30vh;
+        }
+    }
+    .workHeader-BG {
+        grid-area: 6/6/11/9;
+        background-color: $Glamour;
+        z-index: -1;
+    }
+
+}
