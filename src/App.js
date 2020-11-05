@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import NavBar from "./Components/NavBar/NavBar";
 import {HashRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './Pages/Home/Home';
@@ -8,6 +8,11 @@ import Footer from './Components/Footer/Footer';
 
 
 function App() {
+
+  useEffect(() => {
+    document.title = "Helen Murphy";
+  }, [])
+
   return (
     <Router>
       <div className="App">

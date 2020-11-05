@@ -1,38 +1,106 @@
+@import "../../Variables.scss";
+
 .project {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    align-items: center;
-    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     height: 70vh;
-    font-family: montserrat, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    color: #434952;
-}
+    background-color: $Grayish;
+    margin-top: 10px;
 
-.projectDetails {
-    align-self: center;
-    justify-self: center;
-    text-align: center;
-    grid-row: 2/4;
-    grid-column: 3/6;
-}
+    .projectDetails {
+        grid-row: 1/3;
 
-.projectDetails h2 {
-    letter-spacing: 10px;
-    font-size: 30px;
-}
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-self: center;
 
-.projectPics {
-    align-self: center;
-    justify-self: center;
-    grid-row: 2/4;
-    grid-column: 7/11;
-}
+        padding: 20px;
+        
+        h2 {
+            @include montserratRegular;
+            letter-spacing: 8px;
+            font-size: 30px;
+            color: $Blackish;
+            margin: 0;
+            align-self: center;
+        }
+        p{
+            @include charterLight;
+            color: $Blackish;
+            font-size: 18px;
+            letter-spacing: 1px;
+            margin: 0;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        .websiteLinks{
+            display: flex;
+            align-self: center;
+            justify-self: center;
+            justify-content: center;
+            justify-items: center;
+            a {
+                @include montserratRegular;
+                color: $Blackish;
+                font-size: 16px;
+                margin: 0;
+                margin-top: 5px;
+                text-decoration: none;
 
-.projectPics img {
-    max-width: 50vw;
-    height: auto;
-    max-height: 50vh;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            p{
+                padding: 0;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+    }
+
+    .projectPics {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        height: 70vh;
+        img {
+            max-width: 30vw;
+            max-height: 30vh;
+        }
+
+        #pic1{
+            grid-row: 1/6;
+            grid-column: 3/8;
+        }
+        #pic2{
+            grid-row: 7/11;
+            grid-column: 6/9;
+        }
+        #pic3 {
+            grid-row: 3/6;
+            grid-column: 9/12;
+
+            height: 100px;
+        }
+        #pic4{
+            grid-row: 7/12;
+            grid-column: 2/4;
+        }
+    }
+
+    .left{
+        grid-column: 1/2;
+
+    }
+    .right{
+        grid-column: 2/3;
+    }
+}
+.altColor{
+    background-color: $Mauve;
+    margin-top: 60px;
+    margin-bottom: 30px;
 }

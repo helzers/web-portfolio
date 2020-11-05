@@ -1,0 +1,27 @@
+@import '../../Variables.scss';
+
+.collegeProject{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid $Whiteish;
+    padding: 20px;
+    height: 300px;
+    width: 330px;
+
+    h2{
+        @include montserratRegular;
+        justify-self: center;
+        align-self: center;
+        margin: 0;
+        margin-bottom: 20px;
+        letter-spacing: 3px;
+    }
+    p {
+        @include charterLight;
+        justify-self: center;
+        text-align: left;
+        line-height: 25px;
+        margin: 0;
+        padding: 10px;
+    }
+}

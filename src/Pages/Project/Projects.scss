@@ -1,0 +1,30 @@
+@import '../../Variables.scss';
+
+.collegeProjectsContainer {
+    height: 80vh;
+    background-color: $Taupe;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+
+    h1 {
+        @include montserratRegular;
+        grid-row: 2/3;
+        grid-column: 5/9;
+        margin: 0;
+        letter-spacing: 3px;
+        
+        justify-self: center;
+    }
+    .GC {
+        grid-row: 4/12;
+        grid-column: 3/6;
+    }
+    .FYP{
+        grid-row: 4/12;
+        grid-column: 8/11;
+
+        justify-self: flex-end;
+    }
+}
