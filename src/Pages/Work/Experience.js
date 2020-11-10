@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import Jobs from '../../Components/Jobs/Jobs';
 import WorkExperienceHeader from "../../Components/WorkExperienceHeader/WorkExperienceHeader";
 import Volunteer from '../../Components/Volunteer/Volunteer';
@@ -12,6 +12,10 @@ function WorkExperience() {
     var classRepDesc = "I managed communications between the class and college administration, dealing with issues regarding scheduling, grading and personal circumstances for students during final year and during Erasmus in 3rd year";
     
     var CoderDojoDesc = "I volunteered to help teach kids from ages 5-7, leading a class that taught the basics of coding through scratch and explained basic concepts such as loops";
+
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, []);
 
     return (
         <div>

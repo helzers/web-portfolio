@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Project from '../../Components/Project/Project';
 import ProjectHeader from '../../Components/ProjectHeader/ProjectHeader';
 import CollegeProject from '../../Components/CollegeProject/CollegeProject';
@@ -23,6 +23,10 @@ function Projects() {
 
     // var portfolioPics = [];
     console.log("Ran Projects Page, Pic JSON Declared as:" + OMWLSlides.pictures)
+
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, []);
     
 
     return (

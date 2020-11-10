@@ -5,6 +5,7 @@ import Home from './Pages/Home/Home';
 import WorkExperience from './Pages/Work/Experience';
 import Projects from './Pages/Project/Projects';
 import Footer from './Components/Footer/Footer';
+import ContactMe from './Pages/ContactMe/ContactMe';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path="/" exact component={Home} />
             <Route path="/experience" exact component={WorkExperience} />
             <Route path="/projects" exact component={Projects} />
+            <Route path="/contactme" exact component={ContactMe} />
           </Switch>
         <Footer />
       </div>

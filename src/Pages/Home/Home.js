@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import "./Home.scss";
 import HomeHeader from "../../Components/HomeHeader/HomeHeader";
 import AboutMe from "../../Components/AboutMe/AboutMe";
@@ -7,6 +7,11 @@ import Education from "../../Components/Education/Education";
 
 
 function Home() {
+  
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, []);
+  
   return (
     <div>
       <HomeHeader />
