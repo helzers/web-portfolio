@@ -12,12 +12,25 @@ function Projects() {
     var GCDesc = "Created a web application with a team of international Erasmus students in Ireland, Germany and South Korea. Within the team, I had the role of secretary and had to keep a log of the team meetings and create the agendas. I also had the role of Scrum master and developed the database for the application.";
     var FYPDesc = "I developed an iOS app, to be used for navigation and organisation at festivals that used SWIFT, Google API’s, JavaScript and Firebase ";
     
+    var OMWLPicsJSON = '{ "pictures" :[' +
+        '{ "picURL" : "/Images/Project Page/OMWL/OMWL-HomePg.png" , "picTitle" : "Home Page"},' +
+        '{ "picURL" : "/Images/Project Page/OMWL/OMWL-MyListAll.png" , "picTitle" : "Saved Watchlist Page"},' +
+        '{ "picURL" : "/Images/Project Page/OMWL/OMWL-Colors.jpg" , "picTitle" : "Project Color Scheme"},' +
+        '{ "picURL" : "/Images/Project Page/OMWL/OMWL-XDMockup.png" , "picTitle" : "AdobeXD Mockup of Pages"}' +
+    ']}';
+
+    var OMWLSlides = JSON.parse(OMWLPicsJSON);
+
+    // var portfolioPics = [];
+    console.log("Ran Projects Page, Pic JSON Declared as:" + OMWLSlides.pictures)
+    
+
     return (
         < >
             <ProjectHeader />
             <div className="homeProjects">
-                <Project DetailsDirection="left" ProjectTitle="Portfolio Website" WebsiteLink="https://helzers.github.io/web-portfolio/#/" AdobeXDLink="https://xd.adobe.com/view/e852151f-57c4-4b10-9dde-345fd35d7c89-bd01/grid/" GitHubLink="https://github.com/helzers/web-portfolio" ProjectDesc={portfolioDesc} ProjectImages="/Images/WebsiteTemplate.jpg"/>
-                <Project DetailsDirection="right" ProjectTitle="Online Movie Watch List" WebsiteLink="https://helzers.github.io/movies-watchlist" AdobeXDLink="" GitHubLink="https://github.com/helzers/movies-watchlist" ProjectDesc={OMWLDesc} ProjectImages1={process.env.PUBLIC_URL + "/Images/Project Page/OMWL/OMWL-HomePg.png"} ProjectImages2={process.env.PUBLIC_URL + "/Images/Project Page/OMWL/OMWL-MyListAll.png"} ProjectImages3={process.env.PUBLIC_URL + "/Images/Project Page/OMWL/OMWL-Colors.jpg"} ProjectImages4={process.env.PUBLIC_URL + "/Images/Project Page/OMWL/OMWL-XDMockup.png"}/>
+                <Project DetailsDirection="left"  ProjectTitle="Portfolio Website" WebsiteLink="https://helzers.github.io/web-portfolio/#/" AdobeXDLink="https://xd.adobe.com/view/e852151f-57c4-4b10-9dde-345fd35d7c89-bd01/grid/" GitHubLink="https://github.com/helzers/web-portfolio" ProjectDesc={portfolioDesc} ProjectImages="/Images/WebsiteTemplate.jpg"/>
+                <Project DetailsDirection="right" CarouselPictures={OMWLSlides.pictures} ProjectTitle="Online Movie Watch List" WebsiteLink="https://helzers.github.io/movies-watchlist" AdobeXDLink="" GitHubLink="https://github.com/helzers/movies-watchlist" ProjectDesc={OMWLDesc} />
             </div>
             <div className="collegeProjectsContainer">
                 <h1>College Projects</h1>

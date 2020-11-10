@@ -21,17 +21,25 @@
             
             align-self: center;
             font-size: 24px;
-            padding-right: 10px;
-            padding-left: 10px;
+            margin-right: 10px;
+            margin-left: 10px;
+            &:hover {
+                color: white;
+            }
         }
         .nav-bar-home {
-            @include winsome;
-
-            padding-left: 20px;
-            padding-right: 30px;
+            @include montserratRegular;
+            font-size: 36px;
+            margin-left: 20px;
+            margin-right: 30px;
+            align-self: center;
+            &:hover {
+                color: white;
+            }
         }
         .active {
             color: white;
+            border-bottom: 1px solid white;
         }
         
     }

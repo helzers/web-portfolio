@@ -6,7 +6,9 @@
     height: 240px;
 
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+
+    border: 5px solid $Taupe;
 
     .educationDetails {
         text-align: center;
@@ -15,7 +17,7 @@
         bottom: 0px;
 
         h2 {
-            @include montserratRegular;
+            @include charterLight;
             letter-spacing: 2px;
             font-size: 16px;
             margin: 0;
@@ -45,6 +47,15 @@
             height: auto;
             max-height: 10vh;
         }
+        #alt-pic-size {
+            max-height: 12vh;
+            max-width: 20vw;
+            height: auto;
+        }
+    }
+
+    .alt-size{
+        padding-top: 15px;
     }
     
 }

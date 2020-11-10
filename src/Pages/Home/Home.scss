@@ -2,37 +2,28 @@
 
 .EducationContainer {
     display: grid;
-    grid-template-columns: repeat(24, 0.5fr);
-    grid-template-rows: repeat(26, 0.5fr);
-    height: 100vh;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(13, 1fr);
+    height: 90vh;
+    background-color: $Whiteish;
 
     .tud {
-        grid-area: 3/6/12/12;
-        background-color: $Pale;
+        grid-row: 2/6;
+        grid-column: 4/7;
     }
     .hda {
-        grid-area: 5/14/14/20;
-        background-color: $Glamour;
+        grid-row: 2/6;
+        grid-column: 8/11;
     }
     .loreto {
-        grid-area: 15/5/24/11;
-        background-color: $Pink;
+        grid-row: 8/13;
+        grid-column: 4/7;
+        align-self: flex-start;
     }
     .cct {
-        grid-area: 17/13/26/19;
-        background-color: $Pale;
-    }
-
-    .mauve-bg {
-        background-color: $Mauve;
-        grid-area: 8/8/18/17;
-        z-index: -2;
-    }
-
-    .glamour-bg {
-        background-color: $Glamour;
-        grid-area: 16/9/25/15;
-        z-index: -1;
+        grid-row: 8/13;
+        grid-column: 8/11;
+        align-self: flex-start;
     }
 
 }

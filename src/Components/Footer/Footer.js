@@ -10,7 +10,7 @@ function Footer() {
                 <a href="/#/projects">Projects</a>
             </div>
             <div className="footer-logo">
-                <a className="footer-logo-link" exact href="/#/">Helen Murphy</a>
+                <a className="footer-logo-link" exact href="/#/"><img src={process.env.PUBLIC_URL + "/Images/Nav/HMSemiBold.png"} alt="Helen Logo"/></a>
             </div>
             <div className="contact">
                 <p>Contact Me</p>

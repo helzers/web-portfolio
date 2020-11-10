@@ -4,25 +4,40 @@
     display: flex;
     justify-content: space-between;
     background-color: $Grayish;
+    height: 15vh;
 
     .website-nav {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: flex-start;
 
-        padding-left: 40px;
-        padding-right: 10px;
+        margin-left: 40px;
+        margin-right: 10px;
+        margin-bottom: 5px;
         a {
             @include montserratRegular;
 
             font-size: 16px;
+            &:hover{
+                color: white;
+                border-bottom: 1px solid white;
+            }
         }
     }
 
     .footer-logo {
-        .footer-logo-link {
-            @include winsome;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
+        max-height: 15vh;
+
+        .footer-logo-link {
+            img{
+                max-width: 70px;
+            }
         }
     }
 
@@ -32,11 +47,15 @@
         align-items: flex-end;
         justify-content: center;
         
-        padding-right: 40px;
-        padding-left: 10px;
+        margin-right: 40px;
+        margin-left: 10px;
         p {
             @include montserratRegular;
             margin: 0;
+            &:hover{
+                color: white;
+                border-bottom: 1px solid white;
+            }
         }
     }
 

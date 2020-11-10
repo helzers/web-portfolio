@@ -1,5 +1,7 @@
 import React from 'react';
+import PicCarousel from '../Carousel/Carousel';
 import './Project.scss';
+
 
 function Project(props) {
 
@@ -13,6 +15,8 @@ function Project(props) {
         isDetailsLeft = false;
         isBGAltColor = true;
     }
+
+    console.log("Project Component Ran, about to pass this: " + props.CarouselPictures)
     
     return(
         <div className={`project ${isBGAltColor ? "altColor" : ""}`} >
@@ -28,11 +32,7 @@ function Project(props) {
                 <p id="projectDesc">{props.ProjectDesc}</p>
             </div>
             <div className={`projectPics ${isDetailsLeft ? "right" : "left"}`}>
-                {/* <img src={props.ProjectImages1} alt="Project Screenshots" id="pic1"/>
-                <img src={props.ProjectImages2} alt="Project Screenshots" id="pic2"/>
-                <img src={props.ProjectImages3} alt="Project Screenshots" id="pic3"/>
-                <img src={props.ProjectImages4} alt="Project Screenshots" id="pic4"/>
-                <div className="picture-BG"><p></p></div> */}
+                <PicCarousel CarouselPictures={props.CarouselPictures}/>
             </div>
             <div className="project-BG"><p></p></div>
         </div >
