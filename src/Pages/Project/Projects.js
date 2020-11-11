@@ -19,9 +19,14 @@ function Projects() {
         '{ "picURL" : "/Images/Project Page/OMWL/OMWL-XDMockup.png" , "picTitle" : "AdobeXD Mockup of Pages"}' +
     ']}';
 
-    var OMWLSlides = JSON.parse(OMWLPicsJSON);
+    var PortfolioPicsJSON = '{ "pictures" :[' +
+        '{ "picURL" : "/Images/Project Page/Portfolio/HMSemiBold.png" , "picTitle" : "Portfolio Logo and Favicon"},' +
+        '{ "picURL" : "/Images/Project Page/Portfolio/Portfolio-ColorScheme.png" , "picTitle" : "Portfolio Color Scheme"}' +
+    ']}';
 
-    // var portfolioPics = [];
+    var OMWLSlides = JSON.parse(OMWLPicsJSON);
+    var PortfolioSlides = JSON.parse(PortfolioPicsJSON);
+
     console.log("Ran Projects Page, Pic JSON Declared as:" + OMWLSlides.pictures)
 
     useEffect(() => {
@@ -33,7 +38,7 @@ function Projects() {
         < >
             <ProjectHeader />
             <div className="homeProjects">
-                <Project DetailsDirection="left"  ProjectTitle="Portfolio Website" WebsiteLink="https://helzers.github.io/web-portfolio/#/" AdobeXDLink="https://xd.adobe.com/view/e852151f-57c4-4b10-9dde-345fd35d7c89-bd01/grid/" GitHubLink="https://github.com/helzers/web-portfolio" ProjectDesc={portfolioDesc} ProjectImages="/Images/WebsiteTemplate.jpg"/>
+                <Project DetailsDirection="left"  CarouselPictures={PortfolioSlides.pictures} ProjectTitle="Portfolio Website" WebsiteLink="https://helzers.github.io/web-portfolio/#/" AdobeXDLink="https://xd.adobe.com/view/e852151f-57c4-4b10-9dde-345fd35d7c89-bd01/grid/" GitHubLink="https://github.com/helzers/web-portfolio" ProjectDesc={portfolioDesc} ProjectImages="/Images/WebsiteTemplate.jpg"/>
                 <Project DetailsDirection="right" CarouselPictures={OMWLSlides.pictures} ProjectTitle="Online Movie Watch List" WebsiteLink="https://helzers.github.io/movies-watchlist" AdobeXDLink="" GitHubLink="https://github.com/helzers/movies-watchlist" ProjectDesc={OMWLDesc} />
             </div>
             <div className="collegeProjectsContainer">

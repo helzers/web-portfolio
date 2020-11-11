@@ -7,8 +7,8 @@ function NavBar() {
         <div className="navbar">
             <nav className="nav-items">
                 <NavLink className="nav-bar-home" activeClassName="active" exact to="/">Helen Murphy</NavLink>
-                <NavLink className="nav-bar-experience" activeClassName="active" to="/experience">Experience</NavLink>
-                <NavLink className="nav-bar-projects" activeClassName="active" to="/projects">Projects</NavLink>
+                <NavLink className="nav-bar-experience" activeClassName="active" exact to="/experience">Experience</NavLink>
+                <NavLink className="nav-bar-projects" activeClassName="active" exact to="/projects">Projects</NavLink>
             </nav>
             <div className="img-links">
                 <a className="nav-bar-gh" href="https://github.com/helzers"><img src={process.env.PUBLIC_URL + '/Images/Nav/GH.png'} alt="GitHub"/></a>

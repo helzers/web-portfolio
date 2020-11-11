@@ -1,0 +1,32 @@
+@import '../../Variables.scss';
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/_variables";
+@import "../../../node_modules/bootstrap/scss/_mixins";
+@import "~bootstrap/scss/_carousel.scss";
+
+.carousel {
+    margin: 20px;
+    .carousel-inner{
+        .carousel-item{
+            .imgContainer{
+                display: flex;
+                justify-content: center;
+            }
+            .carousel-caption{
+                position: relative;
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+    .carousel-control-prev {
+        .sr-only {
+            display: none;
+        }
+    }
+    .carousel-control-next {
+        .sr-only{
+            display: none;
+        }
+    }
+}

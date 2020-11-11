@@ -1,0 +1,41 @@
+@import "../../Variables.scss";
+
+.contactMe{
+    height: 75vh;
+    margin-top: 10vh;
+    h1{
+        @include montserratRegular;
+        color: $Blackish;
+        margin-left: 30px;
+        padding-top: 10px;
+    }
+    .contactDetails {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 30px;
+        width: 40%;
+        border: 3px solid $Taupe;
+        h4 {
+            @include charterLight;
+            color: $Blackish;
+            margin: 0;
+        }
+        p{
+            @include charterLight;
+            color: $Blackish;
+            margin: 0;
+        }
+        a{
+            padding-top: 20px;
+            img{
+                max-width: 150px;
+                height: auto;
+            }
+        }
+        #contactInfo {
+            margin-bottom: 40px;
+            font-size: 18px;
+        }
+    }
+}

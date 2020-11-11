@@ -62,32 +62,11 @@
     }
 
     .projectPics {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(12, 1fr);
-        height: 70vh;
         img {
-            max-width: 30vw;
-            max-height: 30vh;
-        }
-
-        #pic1{
-            grid-row: 1/6;
-            grid-column: 3/8;
-        }
-        #pic2{
-            grid-row: 7/11;
-            grid-column: 6/9;
-        }
-        #pic3 {
-            grid-row: 3/6;
-            grid-column: 9/12;
-
-            height: 100px;
-        }
-        #pic4{
-            grid-row: 7/12;
-            grid-column: 2/4;
+            max-width: 35vw;
+            height: auto;
+            max-height: 45vh;
+            object-fit: scale-down;
         }
     }
 
