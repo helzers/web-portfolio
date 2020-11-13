@@ -37,8 +37,6 @@ function ContactMe() {
         setContactInfo({message: message});
 
         submitEmail();
-
-        
     }
 
     var submitEmail = () => {
@@ -88,7 +86,7 @@ function ContactMe() {
 
                     <textarea id="message" name="message" placeholder="Your Message" onChange={onMessageChange}/>
 
-                    <button type="button">Submit</button>
+                    <button type="submit" >Submit</button>
                 </form>
             </div>
         </div>
