@@ -13,7 +13,7 @@ function Footer() {
                 <a className="footer-logo-link" exact href="./#/"><img src={process.env.PUBLIC_URL + "/Images/Nav/HMSemiBold.png"} alt="Helen Logo"/></a>
             </div>
             <div className="contact">
-                <a exact href="./web-portfolio/#/contactme">Contact Me</a>
+                <a exact href="./#/contactme">Contact Me</a>
                 <a exact href={process.env.PUBLIC_URL + "/Helen_Murphy_CV2020.docx"} download>Download my CV</a>
             </div>
         </div>
