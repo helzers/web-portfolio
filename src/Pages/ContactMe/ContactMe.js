@@ -1,18 +1,15 @@
 import React, {useEffect, useState} from 'react';
+import * as emailjs from 'emailjs-com';
+import{ init } from 'emailjs-com';
 import './ContactMe.scss'
 
 function ContactMe() {
     
-    const axios = require('axios');
-
     // Use States 
     var [name, setName] = useState("");
     var [email, setEmail] = useState("");
     var [subject, setSubject] = useState("");
     var [message, setMessage] = useState("");
-
-    var [contactInfo, setContactInfo] = useState({name: '', email: '', subject: '', message: ''})
-    
     
     //Functions
     var onNameChange = (e) => {
@@ -28,30 +25,35 @@ function ContactMe() {
         setMessage(e.target.value);
     }
 
-    var getContactInfo = e => {
+    var submitEmail = (e) => {
         e.preventDefault();
+        const templateId = 'default';
 
-        setContactInfo({name: name});
-        setContactInfo({email: email});
-        setContactInfo({subject: subject});
-        setContactInfo({message: message});
-
-        submitEmail();
+        sendFeedback(templateId, {
+            name: name, 
+            email: email,
+            subject: subject,
+            message: message
+        })
     }
 
-    var submitEmail = () => {
-        axios({
-          method: "POST", 
-          url:"/send", 
-          data:  contactInfo
-        }).then((response)=>{
-          if (response.data.status === 'success'){
-              alert("Message Sent."); 
-              resetForm()
-          }else if(response.data.status === 'fail'){
-              alert("Message failed to send.")
+    var sendFeedback = (templateId, variables) => {
+        init("user_0t8an7ltAZ2DKdzxgfjQZ");
+        
+        emailjs.send(
+          'gmail', templateId,
+          variables
+          ).then(res => {
+            // Email successfully sent alert
+            alert('Email Successfully Sent')
+            resetForm();
+          })
+          // Email Failed to send Error alert
+          .catch(err => {
+            alert('Email Failed to Send')
+            console.error('Email Error:', err)
           }
-        })
+        )
     }
 
     var resetForm = () => {
@@ -77,14 +79,14 @@ function ContactMe() {
                 <a href="https://www.linkedin.com/in/helen-murphy-8895b6107/"><img src={process.env.PUBLIC_URL + "/Images/Linkedin-Logo.png"} alt="LinkedIn" /></a>
             </div>
             <div className="contactMeForm">
-                <form className="contact-form" onSubmit={getContactInfo}>
-                    <input type="text" id="name" name="name" placeholder="Your Name" onChange={onNameChange}/>
+                <form className="contact-form" onSubmit={submitEmail}>
+                    <input type="text" id="name" name="name" value={name} placeholder="Your Name" onChange={onNameChange} required/>
                     
-                    <input type="text" id="email" name="email" placeholder="Your Email" onChange={onEmailChange}/>
+                    <input type="text" id="email" name="email" value={email} placeholder="Your Email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" onChange={onEmailChange} required/>
 
-                    <input type="text" id="subject" name="subject" placeholder="Subject" onChange={onSubjectChange}/>
+                    <input type="text" id="subject" name="subject" value={subject} placeholder="Subject" onChange={onSubjectChange}/>
 
-                    <textarea id="message" name="message" placeholder="Your Message" onChange={onMessageChange}/>
+                    <textarea id="message" name="message" value={message} placeholder="Your Message" onChange={onMessageChange} required/>
 
                     <button type="submit" >Submit</button>
                 </form>
