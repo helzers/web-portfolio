@@ -3,6 +3,8 @@ import './ContactMe.scss'
 
 function ContactMe() {
     
+    const axios = require('axios');
+
     // Use States 
     var [name, setName] = useState("");
     var [email, setEmail] = useState("");
@@ -40,18 +42,18 @@ function ContactMe() {
     }
 
     var submitEmail = () => {
-        // axios({
-        //   method: "POST", 
-        //   url:"/send", 
-        //   data:  contactInfo
-        // }).then((response)=>{
-        //   if (response.data.status === 'success'){
-        //       alert("Message Sent."); 
-        //       resetForm()
-        //   }else if(response.data.status === 'fail'){
-        //       alert("Message failed to send.")
-        //   }
-        // })
+        axios({
+          method: "POST", 
+          url:"/send", 
+          data:  contactInfo
+        }).then((response)=>{
+          if (response.data.status === 'success'){
+              alert("Message Sent."); 
+              resetForm()
+          }else if(response.data.status === 'fail'){
+              alert("Message failed to send.")
+          }
+        })
     }
 
     var resetForm = () => {
