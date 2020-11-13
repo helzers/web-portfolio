@@ -1,0 +1,11 @@
+@import './Variables.scss';
+
+.main-content {
+    background-color: $Whiteish;
+    min-height: 100%;
+
+    .inner-main-content {
+        padding-bottom: 15vh;
+        background-color: $Whiteish;
+    }
+}

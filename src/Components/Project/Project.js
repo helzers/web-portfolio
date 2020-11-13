@@ -34,8 +34,7 @@ function Project(props) {
             <div className={`projectPics ${isDetailsLeft ? "right" : "left"}`}>
                 <PicCarousel CarouselPictures={props.CarouselPictures}/>
             </div>
-            <div className="project-BG"><p></p></div>
-        </div >
+        </div>
     )
 }
 

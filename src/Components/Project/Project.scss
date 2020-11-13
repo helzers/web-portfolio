@@ -1,5 +1,5 @@
 @import "../../Variables.scss";
-
+    
 .project {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -17,7 +17,7 @@
         align-self: center;
 
         padding: 20px;
-        
+            
         h2 {
             @include montserratRegular;
             letter-spacing: 8px;
@@ -72,10 +72,15 @@
 
     .left{
         grid-column: 1/2;
-
     }
     .right{
         grid-column: 2/3;
+    }
+
+    .project-BG{
+        grid-column: 1/3;
+        grid-row: 2/3;
+        background-color: $Whiteish;
     }
 }
 .altColor{

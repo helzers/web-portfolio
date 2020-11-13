@@ -6,6 +6,7 @@ import WorkExperience from './Pages/Work/Experience';
 import Projects from './Pages/Project/Projects';
 import Footer from './Components/Footer/Footer';
 import ContactMe from './Pages/ContactMe/ContactMe';
+import './App.scss';
 
 
 function App() {
@@ -19,12 +20,14 @@ function App() {
       <div className="App">
         <NavBar />
           <div className="main-content">
-            <Switch>
-              <Route path="/" exact component={Home} />
-              <Route path="/experience" exact component={WorkExperience} />
-              <Route path="/projects" exact component={Projects} />
-              <Route path="/contactme" exact component={ContactMe} />
-            </Switch>
+            <div className="inner-main-content">
+              <Switch>
+                <Route path="/" exact component={Home} />
+                <Route path="/experience" exact component={WorkExperience} />
+                <Route path="/projects" exact component={Projects} />
+                <Route path="/contactme" exact component={ContactMe} />
+              </Switch>
+            </div>
           </div>
         <Footer />
       </div>
