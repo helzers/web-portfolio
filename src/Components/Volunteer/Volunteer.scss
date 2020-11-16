@@ -14,25 +14,28 @@
 
         #role {
             @include montserratRegular;
+            @include TitleFontSizes;
+            
             color: $Blackish;
             letter-spacing: 2px;
-            font-size: 24px;
             margin: 0;
             align-self: center;
         }
         #company {
             @include charterLight;
+            @include SubTitleFontSizes;
+            
             color: $Blackish;
             letter-spacing: 1px;
-            font-size: 18px;
             margin: 0;
             align-self: center;
             padding: 10px;
         }
         p {
             @include charterLight;
+            @include NormalFontSizes;
+            
             color: $Blackish;
-            font-size: 16px;
             margin: 0;
             padding: 20px;
         }
@@ -42,7 +45,8 @@
 
         img {
             max-height: 15vh;
-            height: auto;
+            width: auto;
+            max-width: 30vw;
             justify-self: center;
             align-self: center;
             grid-column: 9/10;

@@ -45,8 +45,9 @@
             }
         }
         #contactInfo {
+            @include SubTitleFontSizes;
+
             margin-bottom: 40px;
-            font-size: 18px;
         }
     }
     .contactMeForm {
@@ -62,24 +63,29 @@
 
             margin: 30px;
             input{
+                @include montserratRegular;
+                @include SubTitleFontSizes;
+
                 height: 40px;
                 margin-bottom: 15px;
-                font-size: 20px;
                 padding: 5px;
             }
             textarea{
+                @include montserratRegular;
+                @include SubTitleFontSizes;
+
                 height: 200px;
                 margin-bottom: 15px;
-                font-size: 20px;
                 padding: 5px;
             }
             button {
                 @include montserratRegular;
+                @include SubTitleFontSizes;
+
                 align-self: flex-end;
                 height: 50px;
                 width: 150px;
                 border-radius: 30px;
-                font-size: 20px;
                 background-color: $Glamour;
                 border: none;
                 &:hover{

@@ -18,9 +18,9 @@
         z-index: 1;
         h1 {
             @include montserratRegular;
+            @include headerFontSizes;
 
             margin: 0;
-            font-size: 40px;
             letter-spacing: 5px;
             color: $Blackish;
         }
@@ -41,6 +41,7 @@
         img {
             width: auto;
             height: 100%;
+            object-fit: scale-down;
         }
     }
     .projectHeader-BG{

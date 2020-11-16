@@ -10,9 +10,9 @@
 
     h2 {
         @include montserratRegular;
+        @include SubHeaderFontSizes;
         color: $Blackish;
         margin: 0;
-        font-size: 30px;
         letter-spacing: 3px;
         align-self: center;
         text-align: center;

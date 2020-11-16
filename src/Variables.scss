@@ -24,10 +24,86 @@ $Blackish: #3B3E3F;
     text-decoration: none;
 }
 
-@mixin winsome {
-    font-family: Winsome, sans-serif;
-    font-weight: 400;
-    font-size: 36px;
-    text-decoration: none;
-    color: $Whiteish;
+@mixin headerFontSizes {
+    @media screen and (max-width: 767px){
+        font-size: 24px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+        font-size: 30px;
+    }
+    @media screen and (min-width: 1024px){
+        font-size: 36px;
+    }
+}
+
+@mixin SubHeaderFontSizes {
+    @media screen and (max-width: 767px){
+        font-size: 22px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+        font-size: 26px;
+    }
+    @media screen and (min-width: 1024px){
+        font-size: 30px;
+    }
+}
+
+@mixin TitleFontSizes {
+    @media screen and (max-width: 767px){
+        font-size: 16px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+        font-size: 20px;
+    }
+    @media screen and (min-width: 1024px){
+        font-size: 24px;
+    }
+}
+
+@mixin SubTitleFontSizes {
+    @media screen and (max-width: 767px){
+        font-size: 14px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+        font-size: 16px;
+    }
+    @media screen and (min-width: 1024px){
+        font-size: 18px;
+    }
+}
+
+@mixin NormalFontSizes {
+    @media screen and (max-width: 767px){
+        font-size: 12px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+        font-size: 14px;
+    }
+    @media screen and (min-width: 1024px){
+        font-size: 16px;
+    }
+}
+
+@mixin SmallFontSizes {
+    @media screen and (max-width: 767px){
+        font-size: 10px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+        font-size: 12px;
+    }
+    @media screen and (min-width: 1024px){
+        font-size: 14px;
+    }
+}
+
+@mixin responsiveHeights {
+    @media screen and (max-width: 767px){
+        
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+        
+    }
+    @media screen and (min-width: 1024px){
+        
+    }
 }

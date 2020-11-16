@@ -18,24 +18,27 @@
 
         h2 {
             @include charterLight;
+            @include NormalFontSizes;
+
             letter-spacing: 2px;
-            font-size: 16px;
             margin: 0;
             margin-bottom: 10px;
             color: $Blackish;
         }
         h3 {
             @include charterLight;
+            @include SmallFontSizes;
+
             letter-spacing: 2px;
-            font-size: 14px;
             margin: 0;
             margin-bottom: 10px;
             color: $Blackish;
         }
         h4 {
             @include charterLight;
+            @include SmallFontSizes;
+
             letter-spacing: 5px;
-            font-size: 14px;
             margin: 0;
             color: $Blackish;
         }

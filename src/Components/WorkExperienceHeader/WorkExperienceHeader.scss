@@ -15,8 +15,8 @@
         justify-self: center;
         h1{
             @include montserratRegular;
+            @include headerFontSizes;
             color: $Blackish;
-            font-size: 36px;
             letter-spacing: 3px;
         }
     }
@@ -26,6 +26,8 @@
 
         img {
             max-height: 50vh;
+            width: auto;
+            max-width: 40vw;
         }
     }
     .image2 {
@@ -33,6 +35,8 @@
         z-index: 1;
         img {
             max-height: 30vh;
+            width: auto;
+            max-width: 40vw;
         }
     }
     .workHeader-BG {
