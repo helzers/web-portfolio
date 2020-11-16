@@ -82,7 +82,7 @@ function ContactMe() {
                 <form className="contact-form" onSubmit={submitEmail}>
                     <input type="text" id="name" name="name" value={name} placeholder="Your Name" onChange={onNameChange} required/>
                     
-                    <input type="email" id="email" name="email" value={email} placeholder="Your Email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" onChange={onEmailChange} required/>
+                    <input type="email" id="email" name="email" value={email} placeholder="Your Email" onChange={onEmailChange} required/>
 
                     <input type="text" id="subject" name="subject" value={subject} placeholder="Subject" onChange={onSubjectChange}/>
 
