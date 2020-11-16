@@ -5,6 +5,7 @@
     margin-top: 10vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    
     img {
         width: 100%;
         height: auto;
@@ -27,8 +28,13 @@
         padding-left: 50px;
         padding-right: 50px;
         background-color: $Glamour;
-        box-shadow: 1px 3px 10px $Glamour;
         color: $Whiteish;
+
+        @media screen and (max-width: 767px){
+            width: 20vw;
+            height: 5vh;
+            padding: 35px;
+        }
 
         h2 {
             @include montserratRegular;
@@ -36,12 +42,20 @@
             letter-spacing: 10px;
             margin: 0;
             margin-bottom: 20px;
+            @media screen and (max-width: 767px){
+                margin-bottom: 0;
+                font-size: 18px;
+            }
         }
         p {
             @include charterLight;
             @include TitleFontSizes;
             font-weight: normal;
             margin: 0;
+            @media screen and (max-width: 767px){
+                font-size: 12px;
+                text-align: center;
+            }
         }
     }
 }

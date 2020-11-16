@@ -11,9 +11,20 @@
 
     background-color: $Whiteish;
 
+    @media screen and (max-width: 767px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .titleWork {
         grid-area: 5/3/6/7;
         justify-self: center;
+
+        @media screen and (max-width: 767px){
+            background-color: $Pink;
+            padding: 10px;
+        }
         h1{
             @include montserratRegular;
             @include headerFontSizes;
@@ -24,6 +35,9 @@
     .image1 {
         grid-area: 3/7/9/10;
         z-index: 1;
+        @media screen and (max-width: 767px){
+            display: none;
+        }
 
         img {
             max-height: 50vh;
@@ -34,20 +48,20 @@
     .image2 {
         grid-area: 8/5/11/8;
         z-index: 1;
+        @media screen and (max-width: 1023px){
+            display: none;
+        }
         img {
             max-height: 30vh;
             width: auto;
             max-width: 40vw;
-            @media screen and (min-width: 768px) and (max-width: 1023px){
-                display: none;
-            }
         }
     }
     .workHeader-BG {
         grid-area: 6/6/11/9;
         background-color: $Glamour;
         z-index: 0;
-        @media screen and (min-width: 768px) and (max-width: 1023px){
+        @media screen and (max-width: 1023px){
             display: none;
         }
     }

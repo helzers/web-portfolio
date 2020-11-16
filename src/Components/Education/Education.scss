@@ -14,6 +14,11 @@
         height: 25vh;
         width: 30vw;
     }
+    @media screen and (max-width: 767px){
+        width: 60vw;
+        height: 20vh;
+        margin: 10px;
+    }
 
     .educationDetails {
         text-align: center;

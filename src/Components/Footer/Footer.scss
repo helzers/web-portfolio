@@ -54,6 +54,10 @@
         
         margin-right: 40px;
         margin-left: 10px;
+        @media screen and (max-width: 767px){
+            @include NormalFontSizes;
+            margin-right: 30px;
+        }
         a {
             @include montserratRegular;
             margin: 0;

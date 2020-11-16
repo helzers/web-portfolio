@@ -15,6 +15,12 @@
     @media screen and (min-width: 768px) and (max-width: 1023px){
         height: 60vh;
     }
+    @media screen and (max-width: 767px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 90vh;
+    }
 
     h1 {
         @include montserratRegular;
@@ -26,6 +32,9 @@
         letter-spacing: 3px;
         text-align: center;
         justify-self: center;
+        @media screen and (max-width: 767px){
+            padding: 20px;
+        }
     }
     .GC {
         grid-row: 4/12;

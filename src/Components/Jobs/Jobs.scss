@@ -11,6 +11,13 @@
     align-content: center;
     background-color: $Pale;
 
+    @media screen and (max-width: 767px){
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+    }
 
     .jobDetails {
         align-self: center;
@@ -24,6 +31,9 @@
         @media screen and (min-width: 768px) and (max-width: 1023px){
             grid-column: 2/9;
             justify-self: flex-end;
+        }
+        @media screen and (max-width: 767px){
+            background-color: $Pale;
         }
 
         h2 {

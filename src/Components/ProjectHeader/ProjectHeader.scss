@@ -10,6 +10,9 @@
     grid-template-columns: repeat(12, 1fr);
 
     background-color: $Whiteish;
+    
+    
+
     .titleProject{
         grid-row: 4/6;
         grid-column: 7/10;
@@ -17,6 +20,13 @@
         justify-self: center;
         align-self: end;
         z-index: 1;
+
+        @media screen and (max-width: 767px){
+            grid-row: 4/10;
+            grid-column: 3/11;  
+            justify-self: center;
+            align-self: center; 
+        }
         h1 {
             @include montserratRegular;
             @include headerFontSizes;
@@ -33,6 +43,9 @@
         img {
             width: 100%;
             height: auto;
+            @media screen and (max-width: 767px){
+                display: none;
+            }
         }
     }
     .image2Project{
@@ -44,6 +57,9 @@
             height: 100%;
             max-width: 30vw;
             object-fit: scale-down;
+            @media screen and (max-width: 767px){
+                display: none;
+            }
         }
     }
     .projectHeader-BG{
@@ -51,5 +67,8 @@
         grid-column: 4/11;
         grid-row: 4/10;
         z-index: 0;
+        @media screen and (max-width: 767px){
+            grid-column: 3/11; 
+        }
     }
 }

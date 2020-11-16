@@ -12,6 +12,11 @@
         height: 35vh;
         width: 30vw;
     }
+    @media screen and (max-width: 767px){
+        width: 70vw;
+        height: 30vh;
+        margin: 10px;
+    }
 
     h2{
         @include montserratRegular;
