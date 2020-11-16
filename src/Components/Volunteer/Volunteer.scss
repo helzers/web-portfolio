@@ -8,6 +8,10 @@
     max-width: 35vw;
     border: 5px solid $Taupe;
 
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+        height: 40vh;
+    }
+
     .roleDetails {
         display: flex;
         flex-direction: column;
@@ -30,6 +34,7 @@
             margin: 0;
             align-self: center;
             padding: 10px;
+            text-align: center;
         }
         p {
             @include charterLight;

@@ -12,6 +12,10 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
 
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+        height: 60vh;
+    }
+
     h1 {
         @include montserratRegular;
         @include SubHeaderFontSizes;
@@ -20,17 +24,23 @@
         grid-column: 5/9;
         margin: 0;
         letter-spacing: 3px;
-        
+        text-align: center;
         justify-self: center;
     }
     .GC {
         grid-row: 4/12;
         grid-column: 3/6;
+        @media screen and (min-width: 768px) and (max-width: 1024px){
+            grid-column: 2/6;
+        }
     }
     .FYP{
         grid-row: 4/12;
         grid-column: 8/11;
 
         justify-self: flex-end;
+        @media screen and (min-width: 768px) and (max-width: 1024px){
+            grid-column: 8/12;
+        }
     }
 }

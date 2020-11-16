@@ -1,15 +1,19 @@
 @import "../../Variables.scss";
 
 .EducationContainer {
+    @include responsiveHeights90;
+    
     display: grid;
     grid-template-columns: repeat(13, 1fr);
     grid-template-rows: repeat(13, 1fr);
-    height: 90vh;
     background-color: $Whiteish;
 
     .tud {
         grid-row: 2/6;
         grid-column: 4/7;
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            justify-self: flex-end;
+        }
     }
     .hda {
         grid-row: 2/6;
@@ -19,6 +23,9 @@
         grid-row: 8/13;
         grid-column: 4/7;
         align-self: flex-start;
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            justify-self: flex-end;
+        }
     }
     .cct {
         grid-row: 8/13;

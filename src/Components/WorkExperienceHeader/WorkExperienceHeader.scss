@@ -1,12 +1,13 @@
 @import "../../Variables.scss";
 
 .workHeaderContainer {
+    @include AltHeaderHeight;
+
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
 
     margin-top: 10vh;
-    height: 90vh;
 
     background-color: $Whiteish;
 
@@ -37,12 +38,18 @@
             max-height: 30vh;
             width: auto;
             max-width: 40vw;
+            @media screen and (min-width: 768px) and (max-width: 1023px){
+                display: none;
+            }
         }
     }
     .workHeader-BG {
         grid-area: 6/6/11/9;
         background-color: $Glamour;
         z-index: 0;
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            display: none;
+        }
     }
 
 }

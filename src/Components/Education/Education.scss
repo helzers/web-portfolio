@@ -10,6 +10,11 @@
 
     border: 5px solid $Taupe;
 
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+        height: 25vh;
+        width: 30vw;
+    }
+
     .educationDetails {
         text-align: center;
         padding: 15px;
