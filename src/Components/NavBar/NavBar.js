@@ -14,9 +14,9 @@ function NavBar() {
     return (
         <div className="navbar">
             <div className="mobile-logo">
-                <img src={process.env.PUBLIC_URL + '/Images/Nav/HMSemiBold.png'} alt="logo"/>
+                <a href="./#/"><img src={process.env.PUBLIC_URL + '/Images/Nav/HMSemiBold.png'} alt="logo"/></a>
             </div>
-            <nav className={isMenuToggled ? 'nav-items responsive' : 'nav-items'}>
+            <nav className={isMenuToggled ? 'nav-items responsive' : 'nav-items'} onClick={isToggled}>
                 <NavLink className="nav-bar-home" activeClassName="active" exact to="/">Helen Murphy</NavLink>
                 <NavLink className="nav-bar-experience" activeClassName="active" exact to="/experience">Experience</NavLink>
                 <NavLink className="nav-bar-projects" activeClassName="active" exact to="/projects">Projects</NavLink>

@@ -46,4 +46,24 @@
         }
     }
 
+    .edu-svg {
+        grid-row: 1/4;
+        grid-column: 10/14;
+
+        align-self: flex-start;
+        svg{
+            fill: none;
+
+            animation: dash 2s linear forwards;
+            animation-play-state: paused;
+            animation-delay: calc(var(--scrollEdu) * -1.5s);
+
+            stroke-dasharray: 1500;
+            stroke-dashoffset: 2000;
+        }
+        @media screen and (max-width: 767px){
+            display: none;
+        }
+    }
+
 }

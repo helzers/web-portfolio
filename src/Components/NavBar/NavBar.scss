@@ -54,15 +54,6 @@
             padding: 10px;
         }
     }
-
-    // .mobile-logo {
-    //     display: none;
-    // }
-
-    // .mobile-icon {
-    //     display: none;
-    // }
-    
 }
 
 @media screen and (min-width: 768px){
@@ -76,15 +67,17 @@
 
 @media screen and (max-width: 767px){
     .navbar{
-        //position: relative;
-
         .mobile-logo{
             align-self: center;
             justify-self: center;
             margin: 10px;
-            img {
+            a{
+                img {
                 max-width: 15vw;
                 height: auto;
+                object-fit: scale-down;
+                }
+
             }
         }
 
