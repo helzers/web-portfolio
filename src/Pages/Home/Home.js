@@ -11,8 +11,6 @@ function Home() {
   useEffect(() => {
     window.scrollTo(0,0);
   }, []);
-
-  var EducationContainer = document.getElementsByClassName("EducationContainer")
   
   window.addEventListener('scroll', () => {
     document.body.style.setProperty('--scrollEdu',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));

@@ -8,7 +8,7 @@ function ProjectHeader() {
                 <h1>Projects</h1>
             </div>
             <div className="image1Project">
-                <img src={process.env.PUBLIC_URL + "/Images/Project Page/images-6.jpeg"} alt="background" />
+                <img src={process.env.PUBLIC_URL + "/Images/Project Page/LaptopPinkMug.jpg"} alt="background" />
             </div>
             <div className="image2Project">
                 <img src={process.env.PUBLIC_URL + "/Images/Project Page/lightbulb 2 transparent.png"} alt="background" />

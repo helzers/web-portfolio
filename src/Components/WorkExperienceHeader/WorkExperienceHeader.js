@@ -8,11 +8,12 @@ function WorkExperienceHeader() {
                 <h1>Work Experience</h1>
             </div>
             <div className="image1">
-                <img src={process.env.PUBLIC_URL + "/Images/WorkPage/workLaptop.jpg"} alt="background" />
+                <img src={process.env.PUBLIC_URL + "/Images/WorkPage/LaptopNotePad.jpg"} alt="background" />
             </div>
             <div className="image2">
-                <img src={process.env.PUBLIC_URL + "/Images/WorkPage/declutter1.jpg"} alt="background" />
+                <img src={process.env.PUBLIC_URL + "/Images/WorkPage/LaptopBrownMug.jpg"} alt="background" />
             </div>
+            <div className="image2-border"><p></p></div>
             <div className="workHeader-BG"><p></p></div>
             <div className="workHeader-svg-1">
                 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 932.97 659.05">
