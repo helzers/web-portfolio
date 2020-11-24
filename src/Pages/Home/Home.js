@@ -8,14 +8,24 @@ import Education from "../../Components/Education/Education";
 
 function Home() {
   
+  /*
+  *   Use Effects
+  */
   useEffect(() => {
     window.scrollTo(0,0);
   }, []);
-  
+
+
+
+  /*
+  *   Functions
+  */
   window.addEventListener('scroll', () => {
     document.body.style.setProperty('--scrollEdu',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
     console.log(window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
   }, false);
+  
+
   
   return (
     <div>

@@ -6,6 +6,10 @@ import "./Experience.scss";
 
 
 function WorkExperience() {
+
+    /*
+    *   Variables
+    */
     
     var OJJobDesc = "I worked on the company’s largest airline client, maintaining their online technologies using Java, JavaScript, JSP, XML, XSL, HTML, CSS and internal tools. My work included designing and implementing new features to update the website to align with EU Law. I worked on application support, fixing critical bugs. Used GitHub and SVN for version control. Tasks were organised into sprints, which had strict time estimates to complete work on time";
 
@@ -13,9 +17,17 @@ function WorkExperience() {
     
     var CoderDojoDesc = "I volunteered to help teach kids from ages 5-7, leading a class that taught the basics of coding through scratch and explained basic concepts such as loops";
 
+
+
+    /*
+    *   Use Effects
+    */
+
     useEffect(() => {
         window.scrollTo(0,0);
     }, []);
+
+
 
     return (
         <div>

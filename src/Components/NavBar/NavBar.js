@@ -4,12 +4,22 @@ import './NavBar.scss';
 
 function NavBar() {
     
+    /*
+    *   Use States
+    */
+    var [isMenuToggled, setMenuToggle] = useState(false);
+
+
+
+    /*
+    *   Functions
+    */
     var isToggled = () => {
         setMenuToggle(!isMenuToggled);
         console.log(isMenuToggled);
     }
 
-    var [isMenuToggled, setMenuToggle] = useState(false);
+    
     
     return (
         <div className="navbar">

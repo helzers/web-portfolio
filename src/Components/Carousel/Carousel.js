@@ -4,9 +4,12 @@ import './Carousel.scss';
 
 function PicCarousel(props) {
     
+    /*
+    *   Variables
+    */
     var Slides = props.CarouselPictures;
 
-    console.log("Slides:" + Slides);
+    
     
     return(
         <Carousel>

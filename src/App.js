@@ -10,11 +10,17 @@ import './App.scss';
 
 
 function App() {
-  
+
+  /*
+  *   Use Effects
+  */
+
   useEffect(() => {
     document.title = "Helen Murphy";
   }, [])
 
+
+  
   return (
     <Router>
       <div className="App">

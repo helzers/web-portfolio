@@ -5,6 +5,9 @@ import './Project.scss';
 
 function Project(props) {
 
+    /*
+    *   Variables
+    */
     var isDetailsLeft;
     var isBGAltColor;
     if (props.DetailsDirection === "left") {
@@ -15,8 +18,7 @@ function Project(props) {
         isDetailsLeft = false;
         isBGAltColor = true;
     }
-
-    console.log("Project Component Ran, about to pass this: " + props.CarouselPictures)
+    
     
     return(
         <div className={`project ${isBGAltColor ? "altColor" : ""}`} >

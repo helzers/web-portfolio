@@ -5,13 +5,19 @@ import './ContactMe.scss'
 
 function ContactMe() {
     
-    // Use States 
+    /*
+    *   Use States
+    */ 
     var [name, setName] = useState("");
     var [email, setEmail] = useState("");
     var [subject, setSubject] = useState("");
     var [message, setMessage] = useState("");
     
-    //Functions
+
+
+    /*
+    *   Functions
+    */
     var onNameChange = (e) => {
         setName(e.target.value);
     }
@@ -51,7 +57,6 @@ function ContactMe() {
           // Email Failed to send Error alert
           .catch(err => {
             alert('Email Failed to Send')
-            console.error('Email Error:', err)
           }
         )
     }
@@ -63,11 +68,16 @@ function ContactMe() {
         setMessage("");
     }
 
-    //Use Effects
+
+
+    /*
+    *   Use Effects
+    */
     useEffect(() => {
         window.scrollTo(0,0);
     }, []);
-    
+
+
     
     return (
         <div className="contactMe">

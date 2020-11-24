@@ -4,10 +4,15 @@ import './AboutMe.scss'
 
 function AboutMe() {
     
+    /*
+    *   Functions
+    */
     window.addEventListener('scroll', () => {
         document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
     }, false);
     
+
+
     return (
         <div className="aboutMe">
             <div className="aboutMeImage">

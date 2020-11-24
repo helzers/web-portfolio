@@ -3,6 +3,9 @@ import './Education.scss'
 
 function Education(props){
     
+    /*
+    *   Variables
+    */
     var isDetailsAltSize;
     if(props.DetailsID){
         console.log(props.DetailsID);
@@ -11,6 +14,8 @@ function Education(props){
     else {
         isDetailsAltSize = false;
     }
+    
+
     
     return(
         <div className="education">
