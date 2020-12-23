@@ -4,6 +4,8 @@
 I created this website as a place to display my projects and information, and also show some creativity.<br/>
 This website uses ReactJS and SASS, and is my second ReactJS project.<br/>
 
+To view the ReactJS code and the SASS code for this project, switch to the master branch instead of the gh-pages branch
+
 You can view the website at this link:
 
 ### https://helzers.github.io/web-portfolio/#/
